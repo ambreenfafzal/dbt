@@ -1,9 +1,16 @@
 models:
   - name: customer
     description: "DBT model for the customer table"
+  - name: sales
+    description: "DBT model for sales tables"
 sources: 
   - name: customer
     database: DBT_DB
     schema: PUBLIC
     tables:
       - name: customer_src
+  - name: sales
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: sales_src
