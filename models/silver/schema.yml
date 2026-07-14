@@ -1,23 +1,14 @@
 version: 2
 
 sources:
+  - name: source
+    database: DBT_DB
+    schema: BRONZE
+    tables:
+      - name: WORK_PRODUCT_COPY
 
-    - name: source
-
-      database: DBT_DB
-
-      schema: BRONZE
-
-      tables:
-
-        - name: WORK_PRODUCT_COPY
-
-   - name: xfm
-
-      database: PC_DBT_DB
-
-      schema: SILVER
-
-      tables:
-
-        - name: WORK_PRODUCT_TRANSFORM
+  - name: xfm
+    database: DBT_DB
+    schema: SILVER
+    tables:
+      - name: WORK_PRODUCT_TRANSFORM
