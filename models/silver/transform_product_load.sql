@@ -1,14 +1,10 @@
-{{ config({ "materialized":'table',
-
- "transient":true,
-
- "alias":'WORK_PRODUCT_TRANSFORM',
-
- "pre_hook": macros_copy_csv('WORK_PRODUCT_COPY'),
-
- "schema": 'SILVER'
-
-})}}
+{{ config(
+    materialized='table',
+    transient=true,
+    alias='WORK_PRODUCT_TRANSFORM',
+    pre_hook=macros_copy_csv('WORK_PRODUCT_COPY'),
+    schema='SILVER'
+) }}
 
  
 

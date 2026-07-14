@@ -10,16 +10,11 @@ config-version: 2
 profile: 'default'
 
 vars:
-
-   wrk_schema: BRONZE
-
-   file_format_csv: DBT_DB.BRONZE.MY_CSV_FORMAT
-
-   purge_status: FALSE
-
-   stage_name: DBT_DB.BRONZE.SCD_TYPE2_STAGE/
-
-   rawhist_db: DBT_DB
+  wrk_schema: BRONZE
+  file_format_csv: DBT_DB.BRONZE.MY_CSV_FORMAT
+  purge_status: false
+  stage_name: DBT_DB.BRONZE.SCD_TYPE2_STAGE/
+  rawhist_db: DBT_DB
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
